@@ -1,0 +1,24 @@
+{
+  "name": "rollup-react-starter",
+  "version": "0.0.1-SNAPSHOT",
+  "description": "Starter project for React with the Rollup build tool",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "build": "rollup -c",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MatthewEdge/rollup-react-starter"
+  },
+  "author": "Matthew Edge",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-preset-es2015-rollup": "^1.2.0",
+    "eslint-plugin-react": "^6.2.0",
+    "rollup": "^0.35.2",
+    "rollup-plugin-babel": "^2.6.1",
+    "rollup-plugin-eslint": "^3.0.0"
+  }
+}
