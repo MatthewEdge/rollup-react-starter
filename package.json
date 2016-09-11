@@ -10,15 +10,25 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/MatthewEdge/rollup-react-starter"
+    "url": "git+ssh://git@github.com/MatthewEdge/rollup-react-starter.git"
   },
   "author": "Matthew Edge",
   "license": "MIT",
   "devDependencies": {
     "babel-preset-es2015-rollup": "^1.2.0",
+    "babel-preset-react": "^6.11.1",
+    "cssnano": "^3.7.4",
     "eslint-plugin-react": "^6.2.0",
+    "postcss-cssnext": "^2.8.0",
+    "postcss-simple-vars": "^3.0.0",
     "rollup": "^0.35.2",
     "rollup-plugin-babel": "^2.6.1",
-    "rollup-plugin-eslint": "^3.0.0"
+    "rollup-plugin-eslint": "^3.0.0",
+    "rollup-plugin-postcss": "^0.2.0",
+    "rollup-plugin-uglify": "^1.0.1"
+  },
+  "dependencies": {
+    "react": "^15.3.1",
+    "react-dom": "^15.3.1"
   }
 }
