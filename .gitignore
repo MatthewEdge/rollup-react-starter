@@ -1,0 +1,12 @@
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
+
+# Generated Output
+**/target
+build
+
+node_modules
+npm-debug.log

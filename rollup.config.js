@@ -2,6 +2,9 @@
 import babel from 'rollup-plugin-babel'
 import eslint from 'rollup-plugin-eslint'
 import postcss from 'rollup-plugin-postcss'
+import commonjs from 'rollup-plugin-commonjs'
+import nodeResolve from 'rollup-plugin-node-resolve'
+import replace from 'rollup-plugin-replace'
 import uglify from 'rollup-plugin-uglify';
 import { minify } from 'uglify-js';
 
@@ -33,11 +36,24 @@ export default {
       ]
     }),
 
+    nodeResolve({
+      main: true,
+      extensions: ['.js', '.jsx']
+    }),
+
+    commonjs({
+      include: 'node_modules/**'
+    }),
+
+    replace({
+      'process.env.NODE_ENV': JSON.stringify('production')
+    }),
+
     babel({
       babelrc: false,
       exclude: 'node_modules/**',
       presets: ['es2015-rollup', 'react']
-    })//,
+    })
 
     //uglify({}, minify)
   ]
