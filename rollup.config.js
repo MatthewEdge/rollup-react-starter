@@ -17,7 +17,7 @@ export default {
   entry: 'js/main.jsx',
   dest: 'build/main.min.js',
   format: 'iife', // Immediately Invoked Function Expression
-  sourceMap: 'inline',
+  sourceMap: false,
 
   plugins: [
     postcss({
@@ -53,8 +53,8 @@ export default {
       babelrc: false,
       exclude: 'node_modules/**',
       presets: ['es2015-rollup', 'react']
-    })
+    }),
 
-    //uglify({}, minify)
+    uglify({}, minify)
   ]
 }
