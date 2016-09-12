@@ -1,6 +1,8 @@
 # rollup-react-starter
 
-Starter project for developing with React using the Rollup build tool
+Starter project for developing with React using the Rollup build tool to transpile and
+bundle the Javascript code. Gulp is then used to inject the final bundled Javascript
+into the index.html file to minimize network traffic
 
 ## Conventions
 
@@ -9,7 +11,7 @@ Starter project for developing with React using the Rollup build tool
     import 'main.scss'
 
     import React from 'react'
-    import { render } from 'react-dom'
+    import ReactDOM from 'react-dom'
 
     // ...
 ```
